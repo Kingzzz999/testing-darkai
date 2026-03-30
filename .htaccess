@@ -1,0 +1,21 @@
+<FilesMatch "\.(html|css|js)$">
+    Order Deny,Allow
+    Deny from all
+</FilesMatch>
+
+<FilesMatch "\.(ini|log|sh|sql|txt|json|xml)$">
+    Order Deny,Allow
+    Deny from all
+</FilesMatch>
+
+Options -Indexes
+
+<Files ".htaccess">
+    Order Deny,Allow
+    Deny from all
+</Files>
+
+<FilesMatch "^\.">
+    Order Deny,Allow
+    Deny from all
+</FilesMatch>
