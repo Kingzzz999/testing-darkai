@@ -15,6 +15,11 @@ Options -Indexes
     Deny from all
 </Files>
 
+<Files "index.html">
+    Order Deny,Allow
+    Deny from all
+</Files>
+
 <FilesMatch "^\.">
     Order Deny,Allow
     Deny from all
