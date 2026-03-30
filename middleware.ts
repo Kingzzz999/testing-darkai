@@ -16,4 +16,4 @@ export function middleware(request: NextRequest) {
 // Konfigurasi untuk menentukan jalur mana saja yang akan diperiksa oleh middleware
 export const config = {
   matcher: '/((?!api|_next/static|favicon.ico).*)',
-    }
+}
